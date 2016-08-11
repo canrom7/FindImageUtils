@@ -12,6 +12,7 @@ public class FindImage {
 	private static int count = 0;
 	private static int rename = 1;
 	public static void main(String[] args) {
+		
 		// 查找的文件夹地址
 		File inFile = new File("D:\\360data\\重要数据\\桌面\\Weather");
 		// 输出的文件夹地址
@@ -53,7 +54,7 @@ public class FindImage {
 			FileOutputStream output = new FileOutputStream(out);
 			int len;
 			byte[] by = new byte[102400];
-			System.out.println("--------开始复制：" + fileName);
+			System.out.println("-开始复制：" + fileName);
 			int i = 0;
 			while ((len = input.read(by, 0, by.length)) != -1) {
 				i++;

@@ -1,0 +1,21 @@
+[1mdiff --git a/FindImage.java b/FindImage.java[m
+[1mindex b337483..30ed5e2 100644[m
+[1m--- a/FindImage.java[m
+[1m+++ b/FindImage.java[m
+[36m@@ -12,6 +12,7 @@[m [mpublic class FindImage {[m
+ 	private static int count = 0;[m
+ 	private static int rename = 1;[m
+ 	public static void main(String[] args) {[m
+[32m+[m[41m		[m
+ 		// ²éÕÒµÄÎÄ¼ş¼ĞµØÖ·[m
+ 		File inFile = new File("D:\\360data\\ÖØÒªÊı¾İ\\×ÀÃæ\\Weather");[m
+ 		// Êä³öµÄÎÄ¼ş¼ĞµØÖ·[m
+[36m@@ -53,7 +54,7 @@[m [mpublic class FindImage {[m
+ 			FileOutputStream output = new FileOutputStream(out);[m
+ 			int len;[m
+ 			byte[] by = new byte[102400];[m
+[31m-			System.out.println("--------¿ªÊ¼¸´ÖÆ£º" + fileName);[m
+[32m+[m			[32mSystem.out.println("-¿ªÊ¼¸´ÖÆ£º" + fileName);[m
+ 			int i = 0;[m
+ 			while ((len = input.read(by, 0, by.length)) != -1) {[m
+ 				i++;[m
